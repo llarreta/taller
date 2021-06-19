@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ViewDemoComponent } from './view-demo/view-demo.component';
 import { IterateComponentComponent } from './iterate-component/iterate-component.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +20,7 @@ import { IterateComponentComponent } from './iterate-component/iterate-component
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -29,6 +29,7 @@ export class ViewDemoComponent implements OnInit {
   }
 
   changeKitty(){
+
     let res: Observable<Response[]> = 
       this.httpClient.get<Response[]>('https://api.thecatapi.com/v1/images/search')
       .pipe(share());
@@ -43,6 +44,8 @@ export class ViewDemoComponent implements OnInit {
           console.log('ocurrio un error');
 
         });
+
+
   }
 
 }
