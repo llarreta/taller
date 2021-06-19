@@ -1,9 +1,31 @@
 <p>Main View Works!</p>
 
+<div [formGroup]='formSignup'>
+        <p>Email</p>
+        <input 
+              id="email" 
+              formControlName="email"  
+              
+      />
+      <p>Username</p>
+        <input 
+                      id="username" 
+                      formControlName="username"  
+                      
+              />
+      <p>Password</p>
+        <input 
+              id="password" 
+              formControlName="password"  
+              
+      />
+
+      </div>
+<button (click)='signup();'  >Signup</button>
+
 <div *ngIf="username; then thenBlock else elseBlock"></div>
 <ng-template #thenBlock><p>Bienvenido {{username}}</p></ng-template>
 <ng-template #elseBlock><p>Nos gustaria saludarlo, cual es su nombre?</p></ng-template>
-
 
 <div [formGroup]='formGroup'>
   <input 
